@@ -1,0 +1,32 @@
+.search-field {
+  display: flex;
+  align-items: center;
+  max-width: 56.25rem;
+  width: 100%;
+  height: 4rem;
+
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0 1.25rem;
+  border-radius: 5px;
+}
+
+.search-field > input {
+  all: unset;
+  height: 100%;
+  width: 100%;
+
+
+  color: #FFF;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: clamp(0.875rem, 0.7741rem + 0.3899vw, 1.125rem);
+}
+
+.search-field > input::placeholder {
+  color: #FFF;
+  opacity: 0.5;
+}
+
+.search-field > img {
+  margin-right: 1.25rem;
+}
