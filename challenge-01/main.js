@@ -42,11 +42,17 @@ async function getPosts() {
   return response.json();
 }
 
+function formatDate(date) {
+  const options = {day: '2-digit', month: 'short', year: 'numeric'};
+  return new Date(date).toLocaleDateString('pt-BR', options);
+}
+
 async function addPostInfos() {
   const posts = await getPosts();
 
-  posts.forEach(({date, title, desc}) => {
-    createNewPost(title, desc, date);
+  posts.forEach(( {date, title, desc} ) => {
+    const newDate = formatDate(date);
+    createNewPost(title, desc, newDate);
   });
 }
 
