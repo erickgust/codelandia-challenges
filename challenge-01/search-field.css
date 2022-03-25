@@ -16,14 +16,14 @@
   width: 100%;
 
 
-  color: #FFF;
+  color: var(--white);
   font-family: "Inter";
   font-weight: 500;
   font-size: clamp(0.875rem, 0.7741rem + 0.3899vw, 1.125rem);
 }
 
 .search-field > input::placeholder {
-  color: #FFF;
+  color: var(--white);
   opacity: 0.5;
 }
 
