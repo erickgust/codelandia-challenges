@@ -1,0 +1,37 @@
+.blog-post {
+  font-family: 'Lexend Deca', sans-serif;
+  line-height: 1.5;
+
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 1.5rem;
+  box-shadow: 0px 0px 0.625rem rgba(19, 19, 31, 0.05);
+}
+
+.blog-post > .info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+
+  font-weight: 400;
+  color: var(--text);
+  font-size: clamp(0.875rem, 0.8246rem + 0.1949vw, 1rem);
+}
+
+.blog-post > .info > button {
+  all: unset;
+  cursor: pointer;
+}
+
+.blog-post > .title {
+  font-weight: 400;
+  color: var(--title);
+  font-size: clamp(1.125rem, 0.9232rem + 0.7797vw, 1.625rem);
+  margin-bottom: 0.5rem;
+}
+
+.blog-post > .desc {
+  font-weight: 400;
+  color: var(--text);
+  font-size: clamp(0.875rem, 0.7741rem + 0.3899vw, 1.125rem);
+}
