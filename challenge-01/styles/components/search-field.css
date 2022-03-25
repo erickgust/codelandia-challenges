@@ -28,5 +28,12 @@
 }
 
 .search-field > img {
+  width: clamp(1rem, 0.6469rem + 1.3645vw, 1.875rem);
   margin-right: 1.25rem;
+}
+
+@media screen and (max-width: 30rem) {
+  .search-field {
+    height: 2.5rem;
+  }
 }

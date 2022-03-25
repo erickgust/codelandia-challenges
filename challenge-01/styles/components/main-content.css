@@ -1,6 +1,13 @@
 .main-content {
   display: flex;
   justify-content: center;
-  padding: 0 1.5rem;
+  padding: 6.25rem 1.5rem;
   background-color: var(--background);
+}
+
+@media screen and (max-width: 30rem) {
+  .main-content {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+  }
 }
