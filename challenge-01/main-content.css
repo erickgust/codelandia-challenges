@@ -1,0 +1,6 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem;
+  background-color: var(--background);
+}
